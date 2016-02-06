@@ -1,0 +1,19 @@
+Package: *
+Pin: release o=apt-build
+Pin-Priority: 989
+
+Package: *
+Pin: release o=Debian,a=stable,l=Debian-Security
+Pin-Priority: 987
+
+Package: *
+Pin: release o=Debian,a=stable,l=Debian
+Pin-Priority: 985
+
+Package: *
+Pin: release o=Debian,a=testing,l=Debian-Security
+Pin-Priority: 99
+
+Package: *
+Pin: release o=Debian,a=testing,l=Debian
+Pin-Priority: 97
