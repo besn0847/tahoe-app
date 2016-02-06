@@ -1,6 +1,6 @@
 FROM tahoe-base
 
-RUN mkdir-p  /etc/tahoe/tmp /etc/tahoe/logs/incidents /etc/tahoe/private
+RUN mkdir -p /etc/tahoe/tmp /etc/tahoe/logs/incidents /etc/tahoe/private
 
 ADD tahoe/tahoe-introducer.tac /etc/tahoe/
 ADD tahoe/tahoe.cfg /etc/tahoe/
