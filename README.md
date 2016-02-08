@@ -100,6 +100,10 @@ You can also connect to any container and investigate the logs in /var/log :
 No issue identified so far except when running the 'docker-compose -f common.yml build' command. On my Windows, it does not build the container images in the right order.
 Make sure the base one is created first.
 
+     cd base
+     docker build -t tahoeapp_base .
+     cd ..
+
 ## Future
 * No SPOF such as the gateway or the introducer
 * Use of the Alpine Linux raw image for lower footprint
