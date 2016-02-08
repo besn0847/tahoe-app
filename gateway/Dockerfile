@@ -1,4 +1,4 @@
-FROM tahoe-base
+FROM tahoeapp_base
 
 ADD startup.sh /
 

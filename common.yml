@@ -1,0 +1,12 @@
+base:
+  build: base
+
+introducer:
+  build: introducer
+
+node:
+  build: node
+  
+gateway:
+  build: gateway
+  

@@ -1,4 +1,4 @@
-FROM tahoe-base
+FROM tahoeapp_base
 
 RUN mkdir -p /etc/tahoe/tmp /etc/tahoe/logs/incidents /etc/tahoe/private
 

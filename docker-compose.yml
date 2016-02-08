@@ -1,0 +1,62 @@
+introducer:
+  image: tahoeapp_introducer
+  container_name: introducer
+  hostname: introducer
+  ports:
+   - "3456"
+
+tahoe1:
+  image: tahoeapp_node
+  container_name: tahoe1
+  hostname: tahoe1
+  ports:
+   - "3456"
+  links:
+   - introducer
+
+tahoe2:
+  image: tahoeapp_node
+  container_name: tahoe2
+  hostname: tahoe2
+  ports:
+   - "3456"
+  links:
+   - introducer
+
+tahoe3:
+  image: tahoeapp_node
+  container_name: tahoe3
+  hostname: tahoe3
+  ports:
+   - "3456"
+  links:
+   - introducer
+
+tahoe4:
+  image: tahoeapp_node
+  container_name: tahoe4
+  hostname: tahoe4
+  ports:
+   - "3456"
+  links:
+   - introducer
+
+tahoe5:
+  image: tahoeapp_node
+  container_name: tahoe5
+  hostname: tahoe5
+  ports:
+   - "3456"
+  links:
+   - introducer
+   
+gateway:
+  image: tahoeapp_gateway
+  container_name: gateway
+  hostname: gateway
+  ports:
+   - "8021"
+   - "8022"
+  links:
+   - introducer   
+ 
