@@ -1,7 +1,7 @@
 # Tahoe LAFS application with Docker-Compose
 Why doing Tahoe LAFS on Docker ?
 
-I'm working on a distributed project based on containers and ARM boards. The data sharing was the remaining part not currently handled by the project.
+I'm working on an embedded distributed computing project based on containers and ARM boards. The data sharing was the remaining part not currently handled by the project.
 After looking at multiple distributed filesystems, Tahoe LAFS seems to be the most modular one thanks to its peer-to-peer approach.
 I looked also at Ceph but it creates an internal topology realying on a static IP mapping which makes it hard to use in a dynamic and containerized environment.
 
@@ -12,6 +12,7 @@ The next version will support VDI as well file sharing with Owncloud but for now
 
 ## Quickstart
 Pre-requisites (not tested with lower versions):
+
      * Docker 1.10.0 to host Tahoe environment
      * Docker-compose 1.6.0 to build the environment 
 
@@ -41,7 +42,7 @@ The overall architecture is very simple :
 * 5 containers to act as storage nodes
 * 1 container acting as the filesystem gateway (FTP or SFTP)
 
-Note i did not test the FTP connectivity but should work as well.
+Note : i did not test the FTP connectivity but should work as well.
 
 ## Operations
 Compared to my other tentative with Ceph, it is possible to start and stop the system as this is a true P2P topology.
